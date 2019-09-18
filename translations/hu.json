@@ -1223,7 +1223,7 @@
                 },
                 "server_control": {
                     "caption": "Szerver vezérlés",
-                    "description": "A Home Assistant szerver újraindítása és leállítása",
+                    "description": "A Longan szerver újraindítása és leállítása",
                     "section": {
                         "reloading": {
                             "automation": "Automatizálások újratöltése",
@@ -1238,7 +1238,7 @@
                             "confirm_restart": "Biztosan újra akarod indítani a Home Assistantet?",
                             "confirm_stop": "Biztosan le akarod állítani a Home Assistantet?",
                             "heading": "Szerver menedzsment",
-                            "introduction": "Home Assistant szerver vezérlése... a Home Assistant-ból.",
+                            "introduction": "Longan szerver vezérlése... a Longan-ból.",
                             "restart": "Újraindítás",
                             "stop": "Leállítás"
                         },

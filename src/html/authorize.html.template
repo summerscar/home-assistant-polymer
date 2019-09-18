@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home Assistant</title>
+    <title>Longan</title>
     <link rel="preload" href="<%= latestPageJS %>" as="script" crossorigin="use-credentials" />
     <link
       rel="preload"
@@ -40,7 +40,7 @@
     <div class="content">
       <div class="header">
         <img src="/static/icons/favicon-192x192.png" height="52" />
-        Home Assistant
+        Longan
       </div>
       <ha-authorize><p>Initializing</p></ha-authorize>
     </div>

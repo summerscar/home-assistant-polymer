@@ -952,7 +952,7 @@
                 "introduction": "Her er det mogleg å konfigurere dine komponenter og Home Assistant. Ikkje alt er mogleg å konfigurere frå brukarsnittet endå, men vi jobbar med saka.",
                 "person": {
                     "caption": "Personar",
-                    "description": "Administrer personane Home Assistant sporer.",
+                    "description": "Administrer personane Longan sporer.",
                     "detail": {
                         "device_tracker_intro": "Vel eininga som høyrer til denne personen.",
                         "device_tracker_pick": "Vel eining for å spore",

@@ -1237,7 +1237,7 @@
                 },
                 "server_control": {
                     "caption": "Kontrola serwera",
-                    "description": "Uruchom ponownie i zatrzymaj serwer Home Assistant'a",
+                    "description": "Uruchom ponownie i zatrzymaj serwer Longan'a",
                     "section": {
                         "reloading": {
                             "automation": "Automatyzacje",
@@ -1252,7 +1252,7 @@
                             "confirm_restart": "Na pewno chcesz ponownie uruchomić Home Assistant'a?",
                             "confirm_stop": "Na pewno chcesz zatrzymać Home Assistant'a?",
                             "heading": "Zarządzanie serwerem",
-                            "introduction": "Kontroluj serwer Home Assistant'a.",
+                            "introduction": "Kontroluj serwer Longan'a.",
                             "restart": "Uruchom ponownie",
                             "stop": "Zatrzymaj"
                         },

@@ -952,7 +952,7 @@
                 "introduction": "Ovdje možete konfigurirati vaše komponente i Home Assistant. Nije moguće baš sve konfigurirati koristeći UI zasada, ali radimo na tome.",
                 "person": {
                     "caption": "Osobe",
-                    "description": "Upravljajte osobama koje Home Assistant prati.",
+                    "description": "Upravljajte osobama koje Longan prati.",
                     "detail": {
                         "device_tracker_intro": "Odaberite uređaje koji pripadaju ovoj osobi.",
                         "device_tracker_pick": "Odaberite uređaj za praćenje",
@@ -966,7 +966,7 @@
                 },
                 "server_control": {
                     "caption": "Upravljanje poslužiteljem",
-                    "description": "Ponovo pokrenite i zaustavite Home Assistant poslužitelj",
+                    "description": "Ponovo pokrenite i zaustavite Longan poslužitelj",
                     "section": {
                         "reloading": {
                             "automation": "Ponovo učitavanje automatizacija",
@@ -981,7 +981,7 @@
                             "confirm_restart": "Jeste li sigurni da želite ponovo pokrenuti Home Assistant?",
                             "confirm_stop": "Jeste li sigurni da želite zaustaviti Home Assostant?",
                             "heading": "Upravljanje poslužiteljem",
-                            "introduction": "Kontrolirajte vaš Home Assistant server ... iz Home Assistant.",
+                            "introduction": "Kontrolirajte vaš Longan server ... iz Longan.",
                             "restart": "Ponovno pokretanje",
                             "stop": "Stop"
                         },

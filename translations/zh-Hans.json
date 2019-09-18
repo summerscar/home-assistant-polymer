@@ -930,7 +930,7 @@
                 "introduction": "你可以在此配置 Home Assistant 及组件。目前并非所有配置都能通过前端 UI 完成，但是我们在努力实现中。",
                 "person": {
                     "caption": "人员",
-                    "description": "管理 Home Assistant 跟踪的人员。",
+                    "description": "管理 Longan 跟踪的人员。",
                     "detail": {
                         "device_tracker_intro": "选择属于此人的设备。",
                         "device_tracker_pick": "选择要跟踪的设备",
@@ -959,7 +959,7 @@
                             "confirm_restart": "您确定要重新启动 Home Assistant 吗？",
                             "confirm_stop": "您确定要停止 Home Assistant 吗？",
                             "heading": "服务器管理",
-                            "introduction": "在这里即可控制 Home Assistant 服务。",
+                            "introduction": "在这里即可控制 Longan 服务。",
                             "restart": "重新启动",
                             "stop": "停止服务"
                         },

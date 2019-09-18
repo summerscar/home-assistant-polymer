@@ -586,7 +586,7 @@
                     }
                 },
                 "cloud": {
-                    "caption": "Home Assistant Cloud",
+                    "caption": "Longan Cloud",
                     "description_login": "{email} bezala hasi duzu saioa",
                     "description_not_login": "Ez da saioa hasi"
                 },

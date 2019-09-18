@@ -1237,7 +1237,7 @@
                 },
                 "server_control": {
                     "caption": "Serversteuerung",
-                    "description": "Neustarten und Stoppen des Home Assistant Servers",
+                    "description": "Neustarten und Stoppen des Longan Servers",
                     "section": {
                         "reloading": {
                             "automation": "Automatisierungen neu laden",
@@ -1252,7 +1252,7 @@
                             "confirm_restart": "Möchten Sie Home Assistant wirklich neu starten?",
                             "confirm_stop": "Möchten Sie Home Assistant wirklich beenden?",
                             "heading": "Serververwaltung",
-                            "introduction": "Verwalte Home Assistant… von Home Assistant aus.",
+                            "introduction": "Verwalte Longan… von Longan aus.",
                             "restart": "Neu starten",
                             "stop": "Stoppen"
                         },

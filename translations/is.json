@@ -1041,7 +1041,7 @@
                 },
                 "server_control": {
                     "caption": "Stjórnun þjóns",
-                    "description": "Endurræsa og stöðva Home Assistant þjóni",
+                    "description": "Endurræsa og stöðva Longan þjóni",
                     "section": {
                         "reloading": {
                             "automation": "Endurhlaða sjálfvirkni",
@@ -1056,7 +1056,7 @@
                             "confirm_restart": "Ertu viss um að þú viljir endurræsa Home Assistant?",
                             "confirm_stop": "Ertu viss um að þú viljir stöðva Home Assistant?",
                             "heading": "Stjórnun miðlara",
-                            "introduction": "Stjórna Home Assistant miðlara... frá Home Assistant.",
+                            "introduction": "Stjórna Longan miðlara... frá Longan.",
                             "restart": "Endurræsa",
                             "stop": "Stöðva"
                         },

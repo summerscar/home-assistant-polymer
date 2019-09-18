@@ -1252,7 +1252,7 @@
                             "confirm_restart": "Opravdu chcete restartovat Home Assistant?",
                             "confirm_stop": "Opravdu chcete zastavit službu Home Assistant?",
                             "heading": "Správa serveru",
-                            "introduction": "Ovládejte svůj Home Assistant server... z Home Assistant.",
+                            "introduction": "Ovládejte svůj Longan server... z Longan.",
                             "restart": "Restartovat",
                             "stop": "Zastavit"
                         },

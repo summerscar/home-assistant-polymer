@@ -145,7 +145,7 @@ export default {
       humidity: 92,
       pressure: 1099,
       wind_speed: 0.5,
-      attribution: "Powered by Home Assistant",
+      attribution: "Powered by Longan",
       forecast: [
         {
           datetime: "2018-07-19T16:00:45.924736",
@@ -210,7 +210,7 @@ export default {
       humidity: 54,
       pressure: 987,
       wind_speed: 4.8,
-      attribution: "Powered by Home Assistant",
+      attribution: "Powered by Longan",
       forecast: [
         {
           datetime: "2018-07-19T16:00:45.925119",
@@ -1136,7 +1136,7 @@ export default {
       friendly_name: "Philips Hue",
       entity_picture: null,
       description:
-        "Press the button on the bridge to register Philips Hue with Home Assistant.\n\n![Description image](/static/images/config_philips_hue.jpg)",
+        "Press the button on the bridge to register Philips Hue with Longan.\n\n![Description image](/static/images/config_philips_hue.jpg)",
       submit_caption: "I have pressed the button",
     },
     last_changed: "2018-07-19T10:44:46.515160+00:00",

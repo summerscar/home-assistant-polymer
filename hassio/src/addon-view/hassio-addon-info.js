@@ -28,9 +28,9 @@ const PERMIS_DESC = {
       "Add-ons usually run in their own isolated network layer, which prevents them from accessing the network of the host operating system. In some cases, this network isolation can limit add-ons in providing their services and therefore, the isolation can be lifted by the add-on author, giving the add-on full access to the network capabilities of the host machine. This gives the add-on more networking capabilities but lowers the security, hence, the security rating of the add-on will be lowered when this option is used by the add-on.",
   },
   homeassistant_api: {
-    title: "Home Assistant API Access",
+    title: "Longan API Access",
     description:
-      "This add-on is allowed to access your running Home Assistant instance directly via the Home Assistant API. This mode handles authentication for the add-on as well, which enables an add-on to interact with Home Assistant without the need for additional authentication tokens.",
+      "This add-on is allowed to access your running Longan instance directly via the Longan API. This mode handles authentication for the add-on as well, which enables an add-on to interact with Longan without the need for additional authentication tokens.",
   },
   full_access: {
     title: "Full Hardware Access",
@@ -58,14 +58,14 @@ const PERMIS_DESC = {
       "AppArmor ('Application Armor') is a Linux kernel security module that restricts add-ons capabilities like network access, raw socket access, and permission to read, write, or execute specific files.\n\nAdd-on authors can provide their security profiles, optimized for the add-on, or request it to be disabled. If AppArmor is disabled, it will raise security risks and therefore, has a negative impact on the security score of the add-on.",
   },
   auth_api: {
-    title: "Home Assistant Authentication",
+    title: "Longan Authentication",
     description:
-      "An add-on can authenticate users against Home Assistant, allowing add-ons to give users the possibility to log into applications running inside add-ons, using their Home Assistant username/password. This badge indicates if the add-on author requests this capability.",
+      "An add-on can authenticate users against Longan, allowing add-ons to give users the possibility to log into applications running inside add-ons, using their Longan username/password. This badge indicates if the add-on author requests this capability.",
   },
   ingress: {
     title: "Ingress",
     description:
-      "This add-on is using Ingress to embed its interface securely into Home Assistant.",
+      "This add-on is using Ingress to embed its interface securely into Longan.",
   },
 };
 
@@ -369,7 +369,7 @@ class HassioAddonInfo extends EventsMixin(PolymerElement) {
                   disabled="[[_computeCannotIngressSidebar(hass, addon)]]"
                 ></ha-switch>
                 <template is="dom-if" if="[[_computeCannotIngressSidebar(hass, addon)]]">
-                  <span>This option requires Home Assistant 0.92 or later.</span>
+                  <span>This option requires Longan 0.92 or later.</span>
                 </template>
               </div>
             </template>

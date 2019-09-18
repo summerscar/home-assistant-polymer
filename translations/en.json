@@ -1345,7 +1345,7 @@
                 },
                 "server_control": {
                     "caption": "Server Control",
-                    "description": "Restart and stop the Home Assistant server",
+                    "description": "Restart and stop the Longan server",
                     "section": {
                         "reloading": {
                             "automation": "Reload automations",
@@ -1360,7 +1360,7 @@
                             "confirm_restart": "Are you sure you want to restart Home Assistant?",
                             "confirm_stop": "Are you sure you want to stop Home Assistant?",
                             "heading": "Server management",
-                            "introduction": "Control your Home Assistant server… from Home Assistant.",
+                            "introduction": "Control your Longan server… from Longan.",
                             "restart": "Restart",
                             "stop": "Stop"
                         },

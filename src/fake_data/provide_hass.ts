@@ -92,7 +92,7 @@ export const provideHass = (
   const localLanguage = getLocalLanguage();
 
   const hassObj: MockHomeAssistant = {
-    // Home Assistant properties
+    // Longan properties
     auth: {
       data: {
         hassUrl: "",

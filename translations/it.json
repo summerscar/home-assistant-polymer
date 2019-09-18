@@ -1237,7 +1237,7 @@
                 },
                 "server_control": {
                     "caption": "Gestione del server",
-                    "description": "Riavviare e arrestare il server Home Assistant",
+                    "description": "Riavviare e arrestare il server Longan",
                     "section": {
                         "reloading": {
                             "automation": "Ricarica automazioni",
@@ -1252,7 +1252,7 @@
                             "confirm_restart": "Sei sicuro di voler riavviare Home Assistant?",
                             "confirm_stop": "Sei sicuro di voler fermare Home Assistant?",
                             "heading": "Gestione del server",
-                            "introduction": "Controllare il server Home Assistant... da Home Assistant.",
+                            "introduction": "Controllare il server Longan... da Longan.",
                             "restart": "Riavviare",
                             "stop": "Stop"
                         },

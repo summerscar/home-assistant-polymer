@@ -977,7 +977,7 @@
                 },
                 "server_control": {
                     "caption": "Control del servidor",
-                    "description": "Reinicie y detenga el servidor de Home Assistant",
+                    "description": "Reinicie y detenga el servidor de Longan",
                     "section": {
                         "reloading": {
                             "automation": "Recargar automatizaciones",
@@ -992,7 +992,7 @@
                             "confirm_restart": "¿Estás seguro de que quieres reiniciar el Home Assistant?",
                             "confirm_stop": "¿Estás seguro de que quieres detener Home Assistant?",
                             "heading": "Administración del servidor",
-                            "introduction": "Controle su servidor Home Assistant ... desde Home Assistant.",
+                            "introduction": "Controle su servidor Longan ... desde Longan.",
                             "restart": "Reiniciar",
                             "stop": "Detener"
                         },

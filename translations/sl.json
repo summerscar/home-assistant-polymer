@@ -1237,7 +1237,7 @@
                 },
                 "server_control": {
                     "caption": "Nadzor strežnika",
-                    "description": "Znova zaženite in ustavite strežnik Home Assistant",
+                    "description": "Znova zaženite in ustavite strežnik Longan",
                     "section": {
                         "reloading": {
                             "automation": "Ponovno naloži avtomatizacije",
@@ -1252,7 +1252,7 @@
                             "confirm_restart": "Ali ste prepričani, da želite znova zagnati Home Assistant-a?",
                             "confirm_stop": "Ali ste prepričani, da želite ustaviti Home Assistant-a?",
                             "heading": "Upravljanje strežnika",
-                            "introduction": "Nadzirajte strežnik Home Assistant ... iz Home Assistant-a",
+                            "introduction": "Nadzirajte strežnik Longan ... iz Longan-a",
                             "restart": "Ponovni zagon",
                             "stop": "Ustavi"
                         },

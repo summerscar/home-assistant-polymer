@@ -797,7 +797,7 @@
                         },
                         "server_management": {
                             "heading": "مدیریت سرور",
-                            "introduction": "سرور Home Assistant خود را کنترل کنید ... از Home Assistant.",
+                            "introduction": "سرور Longan خود را کنترل کنید ... از Longan.",
                             "restart": "راه‌اندازی مجدد",
                             "stop": "بایست"
                         }

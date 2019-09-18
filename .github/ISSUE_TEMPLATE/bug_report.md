@@ -24,7 +24,7 @@ assignees: ""
 - Or use this command: hass --version
 -->
 
-**Last working Home Assistant release (if known):**
+**Last working Longan release (if known):**
 
 **UI (States or Lovelace UI?):**
 

@@ -935,7 +935,7 @@
                 "introduction": "כאן ניתן להגדיר את הרכיבים ואת ה Home Assistant. לא הכל ניתן להגדיר את ממשק המשתמש עדיין, אבל אנחנו עובדים על זה.",
                 "person": {
                     "caption": "אנשים",
-                    "description": "נהל את האנשים ש Home Assistant יעקב אחריהם.",
+                    "description": "נהל את האנשים ש Longan יעקב אחריהם.",
                     "detail": {
                         "device_tracker_intro": "בחר את המכשירים השייכים לאדם זה.",
                         "device_tracker_pick": "בחר מכשיר למעקב",
@@ -951,7 +951,7 @@
                 },
                 "server_control": {
                     "caption": "בקרת שרת",
-                    "description": "אתחל וכבה את שרת ה Home Assistant",
+                    "description": "אתחל וכבה את שרת ה Longan",
                     "section": {
                         "reloading": {
                             "automation": "טען מחדש אוטומציות",

@@ -1345,7 +1345,7 @@
                 },
                 "server_control": {
                     "caption": "伺服器控制",
-                    "description": "重啟與停止 Home Assistant 伺服器",
+                    "description": "重啟與停止 Longan 伺服器",
                     "section": {
                         "reloading": {
                             "automation": "重新載入自動化",
@@ -1360,7 +1360,7 @@
                             "confirm_restart": "確定要重啟 Home Assistant 嗎？",
                             "confirm_stop": "確定要停止 Home Assistant 嗎？",
                             "heading": "服務器管理",
-                            "introduction": "由 Home Assistant，控制 Home Assistant 伺服器。",
+                            "introduction": "由 Longan，控制 Longan 伺服器。",
                             "restart": "重啟",
                             "stop": "停止"
                         },

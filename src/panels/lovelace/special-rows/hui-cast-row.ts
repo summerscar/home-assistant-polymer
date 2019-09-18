@@ -36,7 +36,7 @@ class HuiCastRow extends LitElement implements EntityRow {
 
     this._config = {
       icon: "hass:television",
-      name: "Home Assistant Cast",
+      name: "Longan Cast",
       ...config,
     };
   }

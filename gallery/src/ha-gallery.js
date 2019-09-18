@@ -71,7 +71,7 @@ class HaGallery extends PolymerElement {
               on-click="_backTapped"
               class$='[[_computeHeaderButtonClass(_demo)]]'
             ></paper-icon-button>
-            <div main-title>[[_withDefault(_demo, "Home Assistant Gallery")]]</div>
+            <div main-title>[[_withDefault(_demo, "Longan Gallery")]]</div>
           </app-toolbar>
         </app-header>
 

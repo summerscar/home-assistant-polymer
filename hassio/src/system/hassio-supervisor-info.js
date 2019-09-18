@@ -83,7 +83,7 @@ class HassioSupervisorInfo extends EventsMixin(PolymerElement) {
             <mwc-button
               on-click="_joinBeta"
               class="warning"
-              title="Get beta updates for Home Assistant (RCs), supervisor and host"
+              title="Get beta updates for Longan (RCs), supervisor and host"
               >Join beta channel</mwc-button
             >
           </template>
@@ -138,7 +138,7 @@ class HassioSupervisorInfo extends EventsMixin(PolymerElement) {
 Beta releases are for testers and early adopters and can contain unstable code changes. Make sure you have backups of your data before you activate this feature.
 
 This inludes beta releases for:
-- Home Assistant (Release Candidates)
+- Longan (Release Candidates)
 - Hass.io supervisor
 - Host system`)
     ) {

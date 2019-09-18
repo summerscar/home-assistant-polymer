@@ -957,7 +957,7 @@
                 "introduction": "Här går det att konfigurera dina komponenter och Home Assistant. Det är inte möjligt att ställa in allt från användargränssnittet ännu, men vi jobbar på det.",
                 "person": {
                     "caption": "Personer",
-                    "description": "Hantera de personer som Home Assistant spårar.",
+                    "description": "Hantera de personer som Longan spårar.",
                     "detail": {
                         "device_tracker_intro": "Välj de enheter som tillhör till den här personen.",
                         "device_tracker_pick": "Välj enhet att spåra",
@@ -971,7 +971,7 @@
                 },
                 "server_control": {
                     "caption": "Serverhantering",
-                    "description": "Starta om och stoppa Home Assistant-servern",
+                    "description": "Starta om och stoppa Longan-servern",
                     "section": {
                         "reloading": {
                             "automation": "Ladda om automationer",
@@ -986,7 +986,7 @@
                             "confirm_restart": "Är du säker på att du vill starta om Home Assistant?",
                             "confirm_stop": "Är du säker på att du vill stoppa Home Assistant?",
                             "heading": "Serverhantering",
-                            "introduction": "Kontrollera din Home Assistant-server ... från Home Assistant.",
+                            "introduction": "Kontrollera din Longan-server ... från Longan.",
                             "restart": "Starta om",
                             "stop": "Stoppa"
                         },

@@ -1,6 +1,6 @@
 import { BaseCastMessage } from "./types";
 
-// Messages to be processed inside the Home Assistant UI
+// Messages to be processed inside the Longan UI
 
 export interface ReceiverStatusMessage extends BaseCastMessage {
   type: "receiver_status";

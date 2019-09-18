@@ -1034,7 +1034,7 @@
                 },
                 "server_control": {
                     "caption": "Керування сервером",
-                    "description": "Перезавантаження та зупинення сервера Home Assistant",
+                    "description": "Перезавантаження та зупинення сервера Longan",
                     "section": {
                         "reloading": {
                             "automation": "Перезавантаження автоматизації",
@@ -1049,7 +1049,7 @@
                             "confirm_restart": "Ви впевнені, що хочете перезапустити Home Assistant?",
                             "confirm_stop": "Ви впевнені, що хочете зупинити Home Assistant?",
                             "heading": "Управління сервером",
-                            "introduction": "Контролюйте сервер Home Assistant ... з Home Assistant",
+                            "introduction": "Контролюйте сервер Longan ... з Longan",
                             "restart": "Перезапустити",
                             "stop": "Зупинити"
                         },

@@ -1345,7 +1345,7 @@
                 },
                 "server_control": {
                     "caption": "Сервер",
-                    "description": "Управляйте сервером Home Assistant",
+                    "description": "Управляйте сервером Longan",
                     "section": {
                         "reloading": {
                             "automation": "Перезагрузить автоматизации",
@@ -1360,7 +1360,7 @@
                             "confirm_restart": "Вы уверены, что хотите перезапустить Home Assistant?",
                             "confirm_stop": "Вы уверены, что хотите остановить Home Assistant?",
                             "heading": "Управление сервером",
-                            "introduction": "Управляйте Вашим сервером Home Assistant... из Home Assistant.",
+                            "introduction": "Управляйте Вашим сервером Longan... из Longan.",
                             "restart": "Перезапустить",
                             "stop": "Остановить"
                         },

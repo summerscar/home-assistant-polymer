@@ -958,7 +958,7 @@
                 "introduction": "Aici este posibil să vă configurați componentele și Home Assistant. Nu este posibilă configurarea de la UI, dar lucrăm la asta.",
                 "person": {
                     "caption": "Persoane",
-                    "description": "Gestionează persoanele pe care Home Assistant le urmărește.",
+                    "description": "Gestionează persoanele pe care Longan le urmărește.",
                     "detail": {
                         "device_tracker_intro": "Selectați dispozitivele care aparțin acestei persoane.",
                         "device_tracker_pick": "Alegeți dispozitivul pentru a urmări",

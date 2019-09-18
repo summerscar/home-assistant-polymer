@@ -15,7 +15,7 @@
       crossorigin
     />
     <%= renderTemplate('_header') %>
-    <title>Home Assistant</title>
+    <title>Longan</title>
     <link
       rel="apple-touch-icon"
       sizes="180x180"

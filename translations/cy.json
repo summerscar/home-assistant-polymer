@@ -776,7 +776,7 @@
                 "introduction": "Yma mae'n bosib ffurfweddu'ch cydrannau ac Home Assistant. Nid yw popeth yn bosib i'w ffurfweddu o'r UI eto, ond rydym yn gweithio arno.",
                 "person": {
                     "caption": "Pobl",
-                    "description": "Rheoli'r pobl mae Home Assistant yn tracio.",
+                    "description": "Rheoli'r pobl mae Longan yn tracio.",
                     "detail": {
                         "device_tracker_intro": "Dewiswch y dyfeisiau sy'n perthyn i'r person hwn.",
                         "device_tracker_pick": "Dewiswch dyfeis i'w dracio",
@@ -800,7 +800,7 @@
                         },
                         "server_management": {
                             "heading": "Rheoli gweinydd",
-                            "introduction": "Rheoli eich gweinydd Home Assistant.. o Home Assistant.",
+                            "introduction": "Rheoli eich gweinydd Longan.. o Longan.",
                             "restart": "Ailgychwyn",
                             "stop": "Stopio"
                         },

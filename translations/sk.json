@@ -1159,7 +1159,7 @@
                 },
                 "server_control": {
                     "caption": "Správa servera",
-                    "description": "Reštartujte a zastavte server Home Assistant",
+                    "description": "Reštartujte a zastavte server Longan",
                     "section": {
                         "reloading": {
                             "automation": "Znovu načítať automatizácie",
@@ -1174,7 +1174,7 @@
                             "confirm_restart": "Naozaj chcete reštartovať Home Assistanta?",
                             "confirm_stop": "Naozaj chcete zastaviť Home Assistanta?",
                             "heading": "Správa servera",
-                            "introduction": "Ovládajte Váš Home Assistant server... z aplikácie Home Assistant.",
+                            "introduction": "Ovládajte Váš Longan server... z aplikácie Longan.",
                             "restart": "Reštartovať",
                             "stop": "Zastaviť"
                         },

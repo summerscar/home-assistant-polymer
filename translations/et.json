@@ -1170,7 +1170,7 @@
                 },
                 "server_control": {
                     "caption": "Serveri juhtimine",
-                    "description": "Taaskäivita ja peata Home Assistant server",
+                    "description": "Taaskäivita ja peata Longan server",
                     "section": {
                         "reloading": {
                             "automation": "Taaslae automatiseeringud",
@@ -1185,7 +1185,7 @@
                             "confirm_restart": "Oled kindel, et soovid taaskäivitada Home Assistant'i?",
                             "confirm_stop": "Oled kindel, et soovid seisata Home Assistant'i?",
                             "heading": "Serveri haldamine",
-                            "introduction": "Kontrolli oma Home Assistant serverit... Home Assistant'ist.",
+                            "introduction": "Kontrolli oma Longan serverit... Longan'ist.",
                             "restart": "Taaskäivita",
                             "stop": "Peata"
                         },

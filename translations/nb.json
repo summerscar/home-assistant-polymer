@@ -1303,7 +1303,7 @@
                 },
                 "server_control": {
                     "caption": "Server-kontroll",
-                    "description": "Start på nytt og stopp Home Assistant-serveren",
+                    "description": "Start på nytt og stopp Longan-serveren",
                     "section": {
                         "reloading": {
                             "automation": "Last inn automasjoner på nytt",
@@ -1318,7 +1318,7 @@
                             "confirm_restart": "Er du sikker på at du vil starte Home Assistant på nytt?",
                             "confirm_stop": "Er du sikker på at du vil stoppe Home Assistant?",
                             "heading": "Serveradministrasjon",
-                            "introduction": "Kontroller din Home Assistant server... fra Home Assistant.",
+                            "introduction": "Kontroller din Longan server... fra Longan.",
                             "restart": "Omstart",
                             "stop": "Stopp"
                         },

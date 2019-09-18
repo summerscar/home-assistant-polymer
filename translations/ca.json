@@ -1304,7 +1304,7 @@
                             "confirm_restart": "Segur que vols reiniciar Home Assistant?",
                             "confirm_stop": "Segur que vols aturar Home Assistant?",
                             "heading": "Gestió del servidor",
-                            "introduction": "Controla el servidor de Home Assistant... des de Home Assistant.",
+                            "introduction": "Controla el servidor de Longan... des de Longan.",
                             "restart": "Reinicia",
                             "stop": "Atura"
                         },

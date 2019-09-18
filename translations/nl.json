@@ -1239,7 +1239,7 @@
                 },
                 "server_control": {
                     "caption": "Serverbeheer",
-                    "description": "De Home Assistant-server opnieuw opstarten en stoppen",
+                    "description": "De Longan-server opnieuw opstarten en stoppen",
                     "section": {
                         "reloading": {
                             "automation": "Herlaad automatiseringen",

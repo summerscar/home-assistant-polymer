@@ -726,7 +726,7 @@
                     }
                 },
                 "cloud": {
-                    "caption": "Home Assistant Cloud",
+                    "caption": "Longan Cloud",
                     "description_login": "Masuk sebagai {email}",
                     "description_not_login": "Belum masuk"
                 },

@@ -1208,7 +1208,7 @@
                             "confirm_restart": "Er du sikker på, at du vil genstarte Home Assistant?",
                             "confirm_stop": "Er du sikker på, at du vil stoppe Home Assistant?",
                             "heading": "Serveradministration",
-                            "introduction": "Administrer din Home Assistant server... fra Home Assistant.",
+                            "introduction": "Administrer din Longan server... fra Longan.",
                             "restart": "Genstart",
                             "stop": "Stop"
                         },

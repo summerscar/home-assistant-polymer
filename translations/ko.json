@@ -1237,7 +1237,7 @@
                 },
                 "server_control": {
                     "caption": "서버 제어",
-                    "description": "Home Assistant 서버를 재시작 또는 중지합니다",
+                    "description": "Longan 서버를 재시작 또는 중지합니다",
                     "section": {
                         "reloading": {
                             "automation": "자동화 새로고침",
@@ -1252,7 +1252,7 @@
                             "confirm_restart": "Home Assistant 를 재시작 하시겠습니까?",
                             "confirm_stop": "Home Assistant 를 중지 하시겠습니까?",
                             "heading": "서버 관리",
-                            "introduction": "Home Assistant 서버를 제어합니다.",
+                            "introduction": "Longan 서버를 제어합니다.",
                             "restart": "재시작",
                             "stop": "중지"
                         },

@@ -8,7 +8,7 @@ documentContainer.setAttribute("style", "display: none;");
 documentContainer.innerHTML = `<custom-style>
   <style>
     /*
-      Home Assistant default styles.
+      Longan default styles.
 
       In Polymer 2.0, default styles should to be set on the html selector.
       (Setting all default styles only on body breaks shadyCSS polyfill.)

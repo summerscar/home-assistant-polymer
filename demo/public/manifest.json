@@ -26,7 +26,7 @@
     }
   ],
   "lang": "en-US",
-  "name": "Home Assistant Demo",
+  "name": "Longan Demo",
   "short_name": "Demo",
   "start_url": "/?homescreen=1",
   "theme_color": "#03A9F4"

@@ -1,5 +1,5 @@
 {
-  "description": "A frontend for Home Assistant using the Polymer framework",
+  "description": "A frontend for Longan using the Polymer framework",
   "repository": {
     "type": "git",
     "url": "https://github.com/home-assistant/home-assistant-polymer"

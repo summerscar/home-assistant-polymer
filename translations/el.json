@@ -1066,7 +1066,7 @@
                 },
                 "server_control": {
                     "caption": "Έλεγχος διακομιστή",
-                    "description": "Επανεκκινήστε και σταματήστε το διακομιστή του Home Assistant",
+                    "description": "Επανεκκινήστε και σταματήστε το διακομιστή του Longan",
                     "section": {
                         "reloading": {
                             "automation": "Επαναφόρτωση αυτοματισμών",

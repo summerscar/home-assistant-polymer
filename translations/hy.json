@@ -948,7 +948,7 @@
                 "introduction": "Այստեղ հնարավոր է կարգավորել ձեր բաղադրիչները և Home Assistant:Դեռ ամեն ինչ հնարավոր չէ կազմաձևել UI- ից, բայց մենք աշխատում ենք այդ ուղղությամբ",
                 "person": {
                     "caption": "Անձինք",
-                    "description": "Կառավարել  այն անձանց, որոնք հետապնդում են Home Assistant-ին:",
+                    "description": "Կառավարել  այն անձանց, որոնք հետապնդում են Longan-ին:",
                     "detail": {
                         "device_tracker_intro": "Ընտրեք սարքեր, որոնք պատկանում են այդ մարդուն.",
                         "device_tracker_pick": "Ընտրել սարքը հետևելու համար",
@@ -962,7 +962,7 @@
                 },
                 "server_control": {
                     "caption": "Սերվերի վերահսկում",
-                    "description": "Վերագործարկեք և դադարեցրեք Home Assistant սերվերը",
+                    "description": "Վերագործարկեք և դադարեցրեք Longan սերվերը",
                     "section": {
                         "reloading": {
                             "automation": "Վերաբեռնել ավտոմատացումները",
@@ -977,7 +977,7 @@
                             "confirm_restart": "Համոզվա՞ծ եք, որ ցանկանում եք վերագործարկել Home Assistant-ը?",
                             "confirm_stop": "Համոզվա՞ծ եք, որ ցանկանում եք դադարեցնել Home Assistant-ը?",
                             "heading": "Սերվերի կառավարում",
-                            "introduction": "Վերահսկեք ձեր Home Assistant սերվերը… Home Assistant-ից:",
+                            "introduction": "Վերահսկեք ձեր Longan սերվերը… Longan-ից:",
                             "restart": "Վերսկսել",
                             "stop": "Դադարեցնել"
                         },

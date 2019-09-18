@@ -60,7 +60,7 @@ export const mockTranslations = (hass: MockHomeAssistant) => {
       "component.homematicip_cloud.config.step.init.title":
         "Pick HomematicIP Access point",
       "component.homematicip_cloud.config.step.link.description":
-        "Press the blue button on the access point and the submit button to register HomematicIP with Home Assistant.\n\n![Location of button on bridge](/static/images/config_flows/config_homematicip_cloud.png)",
+        "Press the blue button on the access point and the submit button to register HomematicIP with Longan.\n\n![Location of button on bridge](/static/images/config_flows/config_homematicip_cloud.png)",
       "component.homematicip_cloud.config.step.link.title": "Link Access point",
       "component.homematicip_cloud.config.title": "HomematicIP Cloud",
       "component.daikin.config.abort.already_configured":
@@ -113,11 +113,11 @@ export const mockTranslations = (hass: MockHomeAssistant) => {
       "component.nest.config.step.link.title": "Link Nest Account",
       "component.nest.config.title": "Nest",
       "component.mailgun.config.abort.not_internet_accessible":
-        "Your Home Assistant instance needs to be accessible from the internet to receive Mailgun messages.",
+        "Your Longan instance needs to be accessible from the internet to receive Mailgun messages.",
       "component.mailgun.config.abort.one_instance_allowed":
         "Only a single instance is necessary.",
       "component.mailgun.config.create_entry.default":
-        "To send events to Home Assistant, you will need to setup [Webhooks with Mailgun]({mailgun_url}).\n\nFill in the following info:\n\n- URL: `{webhook_url}`\n- Method: POST\n- Content Type: application/json\n\nSee [the documentation]({docs_url}) on how to configure automations to handle incoming data.",
+        "To send events to Longan, you will need to setup [Webhooks with Mailgun]({mailgun_url}).\n\nFill in the following info:\n\n- URL: `{webhook_url}`\n- Method: POST\n- Content Type: application/json\n\nSee [the documentation]({docs_url}) on how to configure automations to handle incoming data.",
       "component.mailgun.config.step.user.description":
         "Are you sure you want to set up Mailgun?",
       "component.mailgun.config.step.user.title": "Set up the Mailgun Webhook",
@@ -183,7 +183,7 @@ export const mockTranslations = (hass: MockHomeAssistant) => {
       "component.upnp.config.step.confirm.title": "UPnP/IGD",
       "component.upnp.config.step.init.title": "UPnP/IGD",
       "component.upnp.config.step.user.data.enable_port_mapping":
-        "Enable port mapping for Home Assistant",
+        "Enable port mapping for Longan",
       "component.upnp.config.step.user.data.enable_sensors":
         "Add traffic sensors",
       "component.upnp.config.step.user.data.igd": "UPnP/IGD",
@@ -226,7 +226,7 @@ export const mockTranslations = (hass: MockHomeAssistant) => {
       "component.auth.mfa_setup.notify.step.setup.title": "Verify setup",
       "component.auth.mfa_setup.notify.title": "Notify One-Time Password",
       "component.auth.mfa_setup.totp.error.invalid_code":
-        "Invalid code, please try again. If you get this error consistently, please make sure the clock of your Home Assistant system is accurate.",
+        "Invalid code, please try again. If you get this error consistently, please make sure the clock of your Longan system is accurate.",
       "component.auth.mfa_setup.totp.step.init.description":
         "To activate two factor authentication using time-based one-time passwords, scan the QR code with your authentication app. If you don't have one, we recommend either [Google Authenticator](https://support.google.com/accounts/answer/1066447) or [Authy](https://authy.com/).\n\n{qr_code}\n\nAfter scanning the code, enter the six digit code from your app to verify the setup. If you have problems scanning the QR code, do a manual setup with code **`{code}`**.",
       "component.auth.mfa_setup.totp.step.init.title":
@@ -280,7 +280,7 @@ export const mockTranslations = (hass: MockHomeAssistant) => {
       "component.hue.config.step.init.data.host": "Host",
       "component.hue.config.step.init.title": "Pick Hue bridge",
       "component.hue.config.step.link.description":
-        "Press the button on the bridge to register Philips Hue with Home Assistant.\n\n![Location of button on bridge](/static/images/config_philips_hue.jpg)",
+        "Press the button on the bridge to register Philips Hue with Longan.\n\n![Location of button on bridge](/static/images/config_philips_hue.jpg)",
       "component.hue.config.step.link.title": "Link Hub",
       "component.hue.config.title": "Philips Hue",
       "component.tradfri.config.abort.already_configured":
@@ -311,16 +311,16 @@ export const mockTranslations = (hass: MockHomeAssistant) => {
       "component.mqtt.config.step.hassio_confirm.data.discovery":
         "Enable discovery",
       "component.mqtt.config.step.hassio_confirm.description":
-        "Do you want to configure Home Assistant to connect to the MQTT broker provided by the hass.io add-on {addon}?",
+        "Do you want to configure Longan to connect to the MQTT broker provided by the hass.io add-on {addon}?",
       "component.mqtt.config.step.hassio_confirm.title":
         "MQTT Broker via Hass.io add-on",
       "component.mqtt.config.title": "MQTT",
       "component.geofency.config.abort.not_internet_accessible":
-        "Your Home Assistant instance needs to be accessible from the internet to receive messages from Geofency.",
+        "Your Longan instance needs to be accessible from the internet to receive messages from Geofency.",
       "component.geofency.config.abort.one_instance_allowed":
         "Only a single instance is necessary.",
       "component.geofency.config.create_entry.default":
-        "To send events to Home Assistant, you will need to setup the webhook feature in Geofency.\n\nFill in the following info:\n\n- URL: `{webhook_url}`\n- Method: POST\n\nSee [the documentation]({docs_url}) for further details.",
+        "To send events to Longan, you will need to setup the webhook feature in Geofency.\n\nFill in the following info:\n\n- URL: `{webhook_url}`\n- Method: POST\n\nSee [the documentation]({docs_url}) for further details.",
       "component.geofency.config.step.user.description":
         "Are you sure you want to set up the Geofency Webhook?",
       "component.geofency.config.step.user.title":
@@ -330,18 +330,17 @@ export const mockTranslations = (hass: MockHomeAssistant) => {
         "Account already registered",
       "component.simplisafe.config.error.invalid_credentials":
         "Invalid credentials",
-      "component.simplisafe.config.step.user.data.code":
-        "Code (for Home Assistant)",
+      "component.simplisafe.config.step.user.data.code": "Code (for Longan)",
       "component.simplisafe.config.step.user.data.password": "Password",
       "component.simplisafe.config.step.user.data.username": "Email Address",
       "component.simplisafe.config.step.user.title": "Fill in your information",
       "component.simplisafe.config.title": "SimpliSafe",
       "component.dialogflow.config.abort.not_internet_accessible":
-        "Your Home Assistant instance needs to be accessible from the internet to receive Dialogflow messages.",
+        "Your Longan instance needs to be accessible from the internet to receive Dialogflow messages.",
       "component.dialogflow.config.abort.one_instance_allowed":
         "Only a single instance is necessary.",
       "component.dialogflow.config.create_entry.default":
-        "To send events to Home Assistant, you will need to setup [webhook integration of Dialogflow]({dialogflow_url}).\n\nFill in the following info:\n\n- URL: `{webhook_url}`\n- Method: POST\n- Content Type: application/json\n\nSee [the documentation]({docs_url}) for further details.",
+        "To send events to Longan, you will need to setup [webhook integration of Dialogflow]({dialogflow_url}).\n\nFill in the following info:\n\n- URL: `{webhook_url}`\n- Method: POST\n- Content Type: application/json\n\nSee [the documentation]({docs_url}) for further details.",
       "component.dialogflow.config.step.user.description":
         "Are you sure you want to set up Dialogflow?",
       "component.dialogflow.config.step.user.title":
@@ -358,7 +357,7 @@ export const mockTranslations = (hass: MockHomeAssistant) => {
       "component.deconz.config.step.init.data.port": "Port",
       "component.deconz.config.step.init.title": "Define deCONZ gateway",
       "component.deconz.config.step.link.description":
-        'Unlock your deCONZ gateway to register with Home Assistant.\n\n1. Go to deCONZ system settings\n2. Press "Unlock Gateway" button',
+        'Unlock your deCONZ gateway to register with Longan.\n\n1. Go to deCONZ system settings\n2. Press "Unlock Gateway" button',
       "component.deconz.config.step.link.title": "Link with deCONZ",
       "component.deconz.config.step.options.data.allow_clip_sensor":
         "Allow importing virtual sensors",
@@ -384,15 +383,15 @@ export const mockTranslations = (hass: MockHomeAssistant) => {
       "component.locative.config.abort.one_instance_allowed":
         "Only a single instance is necessary.",
       "component.locative.config.abort.not_internet_accessible":
-        "Your Home Assistant instance needs to be accessible from the internet to receive messages from Geofency.",
+        "Your Longan instance needs to be accessible from the internet to receive messages from Geofency.",
       "component.locative.config.create_entry.default":
-        "To send locations to Home Assistant, you will need to setup the webhook feature in the Locative app.\n\nFill in the following info:\n\n- URL: `{webhook_url}`\n- Method: POST\n\nSee [the documentation]({docs_url}) for further details.",
+        "To send locations to Longan, you will need to setup the webhook feature in the Locative app.\n\nFill in the following info:\n\n- URL: `{webhook_url}`\n- Method: POST\n\nSee [the documentation]({docs_url}) for further details.",
       "component.ios.config.abort.single_instance_allowed":
-        "Only a single configuration of Home Assistant iOS is necessary.",
+        "Only a single configuration of Longan iOS is necessary.",
       "component.ios.config.step.confirm.description":
-        "Do you want to set up the Home Assistant iOS component?",
-      "component.ios.config.step.confirm.title": "Home Assistant iOS",
-      "component.ios.config.title": "Home Assistant iOS",
+        "Do you want to set up the Longan iOS component?",
+      "component.ios.config.step.confirm.title": "Longan iOS",
+      "component.ios.config.title": "Longan iOS",
       "component.smhi.config.error.name_exists": "Name already exists",
       "component.smhi.config.error.wrong_location": "Location Sweden only",
       "component.smhi.config.step.user.data.latitude": "Latitude",
@@ -409,22 +408,22 @@ export const mockTranslations = (hass: MockHomeAssistant) => {
       "component.sonos.config.step.confirm.title": "Sonos",
       "component.sonos.config.title": "Sonos",
       "component.ifttt.config.abort.not_internet_accessible":
-        "Your Home Assistant instance needs to be accessible from the internet to receive IFTTT messages.",
+        "Your Longan instance needs to be accessible from the internet to receive IFTTT messages.",
       "component.ifttt.config.abort.one_instance_allowed":
         "Only a single instance is necessary.",
       "component.ifttt.config.create_entry.default":
-        'To send events to Home Assistant, you will need to use the "Make a web request" action from the [IFTTT Webhook applet]({applet_url}).\n\nFill in the following info:\n\n- URL: `{webhook_url}`\n- Method: POST\n- Content Type: application/json\n\nSee [the documentation]({docs_url}) on how to configure automations to handle incoming data.',
+        'To send events to Longan, you will need to use the "Make a web request" action from the [IFTTT Webhook applet]({applet_url}).\n\nFill in the following info:\n\n- URL: `{webhook_url}`\n- Method: POST\n- Content Type: application/json\n\nSee [the documentation]({docs_url}) on how to configure automations to handle incoming data.',
       "component.ifttt.config.step.user.description":
         "Are you sure you want to set up IFTTT?",
       "component.ifttt.config.step.user.title":
         "Set up the IFTTT Webhook Applet",
       "component.ifttt.config.title": "IFTTT",
       "component.twilio.config.abort.not_internet_accessible":
-        "Your Home Assistant instance needs to be accessible from the internet to receive Twilio messages.",
+        "Your Longan instance needs to be accessible from the internet to receive Twilio messages.",
       "component.twilio.config.abort.one_instance_allowed":
         "Only a single instance is necessary.",
       "component.twilio.config.create_entry.default":
-        "To send events to Home Assistant, you will need to setup [Webhooks with Twilio]({twilio_url}).\n\nFill in the following info:\n\n- URL: `{webhook_url}`\n- Method: POST\n- Content Type: application/x-www-form-urlencoded\n\nSee [the documentation]({docs_url}) on how to configure automations to handle incoming data.",
+        "To send events to Longan, you will need to setup [Webhooks with Twilio]({twilio_url}).\n\nFill in the following info:\n\n- URL: `{webhook_url}`\n- Method: POST\n- Content Type: application/x-www-form-urlencoded\n\nSee [the documentation]({docs_url}) on how to configure automations to handle incoming data.",
       "component.twilio.config.step.user.description":
         "Are you sure you want to set up Twilio?",
       "component.twilio.config.step.user.title": "Set up the Twilio Webhook",
@@ -445,9 +444,9 @@ export const mockTranslations = (hass: MockHomeAssistant) => {
       "component.gpslogger.config.abort.one_instance_allowed":
         "Only a single instance is necessary.",
       "component.gpslogger.config.abort.not_internet_accessible":
-        "Your Home Assistant instance needs to be accessible from the internet to receive messages from GPSLogger.",
+        "Your Longan instance needs to be accessible from the internet to receive messages from GPSLogger.",
       "component.gpslogger.config.create_entry.default":
-        "To send events to Home Assistant, you will need to setup the webhook feature in GPSLogger.\n\nFill in the following info:\n\n- URL: `{webhook_url}`\n- Method: POST\n\nSee [the documentation]({docs_url}) for further details.",
+        "To send events to Longan, you will need to setup the webhook feature in GPSLogger.\n\nFill in the following info:\n\n- URL: `{webhook_url}`\n- Method: POST\n\nSee [the documentation]({docs_url}) for further details.",
       "component.zwave.config.abort.already_configured":
         "Z-Wave is already configured",
       "component.zwave.config.abort.one_instance_only":
