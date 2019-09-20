@@ -146,7 +146,12 @@ class HaSidebar extends LitElement {
               ></paper-icon-button>
             `
           : ""}
-        <span class="title">Longan</span>
+        <div class="title">
+          <img src="/static/icons/favicon-192x192.png" alt="Longan logo" />
+          <div class="name">
+            <span>Longan</span>
+          </div>
+        </div>
       </div>
       <paper-listbox
         attr-for-selected="data-panel"
@@ -492,8 +497,20 @@ class HaSidebar extends LitElement {
       .title {
         display: none;
       }
+      .title img {
+        height: 47%;
+        position: relative;
+        top: 1px;
+        display: block;
+      }
+      .title div.name span {
+        padding-left: 0.5em;
+        font-size: 18px;
+      }
       :host([expanded]) .title {
-        display: initial;
+        height: 100%;
+        display: flex;
+        align-items: center;
       }
 
       paper-listbox::-webkit-scrollbar {
