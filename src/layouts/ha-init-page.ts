@@ -1,5 +1,6 @@
 import "@polymer/paper-spinner/paper-spinner-lite";
 import "@material/mwc-button";
+import "@polymer/paper-input/paper-input.js";
 
 import { LitElement, html, CSSResult, css, property } from "lit-element";
 import { removeInitSkeleton } from "../util/init-skeleton";
@@ -15,6 +16,8 @@ class HaInitPage extends LitElement {
           ? html`
               <p>Unable to connect to Longan.</p>
               <mwc-button @click=${this._retry}>Retry</mwc-button>
+              <paper-input label="Key" id="token"></paper-input>
+              <mwc-button @click=${this._submit}>submit</mwc-button>
               ${location.host.includes("ui.nabu.casa")
                 ? html`
                     <p>
@@ -42,6 +45,27 @@ class HaInitPage extends LitElement {
 
   private _retry() {
     location.reload();
+  }
+
+  private _submit() {
+    let token = this.shadowRoot!.getElementById("token").value;
+    console.log(token);
+    if (!token) return;
+    fetch("/api/activation", {
+      method: "POST",
+      headers: {
+        ["Content-Type"]: "application/json;charset=UTF-8",
+      },
+      body: JSON.stringify({
+        code: token,
+      }),
+    })
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
   }
 
   static get styles(): CSSResult {

@@ -22,6 +22,15 @@ import { PolymerChangedEvent } from "../polymer-types";
 import { AppDrawerLayoutElement } from "@polymer/app-layout/app-drawer-layout/app-drawer-layout";
 import { showNotificationDrawer } from "../dialogs/notifications/show-notification-drawer";
 import { toggleAttribute } from "../common/dom/toggle_attribute";
+import "@vaadin/vaadin-notification/vaadin-notification.js";
+import { getConfigEntries, ConfigEntry } from "../data/config_entries";
+import {
+  subscribeDeviceRegistry,
+  DeviceRegistryEntry,
+} from "../data/device_registry";
+import "@polymer/paper-dialog/paper-dialog.js";
+import "@material/mwc-button";
+import "@polymer/paper-input/paper-input.js";
 
 const NON_SWIPABLE_PANELS = ["kiosk", "map"];
 
@@ -38,6 +47,7 @@ class HomeAssistantMain extends LitElement {
   @property() public route?: Route;
   @property({ type: Boolean }) private narrow?: boolean;
 
+  private mqttDevices: DeviceRegistryEntry[];
   protected render(): TemplateResult | void {
     const hass = this.hass;
 
@@ -83,6 +93,27 @@ class HomeAssistantMain extends LitElement {
           .hass=${hass}
           .route=${this.route}
         ></partial-panel-resolver>
+        <vaadin-notification duration="4000" id="notification">
+          <template>
+            <div>
+              <b>Notice</b>
+              <br />
+              The content of this notification is defined with Polymer template
+            </div>
+          </template>
+        </vaadin-notification>
+        <paper-dialog id="regeister">
+          <h2>Key</h2>
+          <paper-input id="token"></paper-input>
+          <div class="buttons">
+            <mwc-button label="Cancel" dialog-dismiss></mwc-button>
+            <mwc-button
+              label="OK"
+              dialog-confirm
+              @click=${this.submitCode}
+            ></mwc-button>
+          </div>
+        </paper-dialog>
       </app-drawer-layout>
     `;
   }
@@ -110,6 +141,13 @@ class HomeAssistantMain extends LitElement {
         narrow: this.narrow!,
       });
     });
+    window.notification = this.shadowRoot!.getElementById("notification"); // tslint:disable-line
+    const regeister = this.shadowRoot!.getElementById("regeister"); // tslint:disable-line
+    // need to check if regeisted
+    regeister.open(); // tslint:disable-line
+    // window.notification.open(); // tslint:disable-line
+
+    this.subscribeMqtt();
   }
 
   protected updated(changedProps: PropertyValues) {
@@ -131,6 +169,51 @@ class HomeAssistantMain extends LitElement {
     if (oldHass && oldHass.language !== this.hass!.language) {
       this.drawer._resetPosition();
     }
+  }
+
+  private async subscribeMqtt() {
+    const entries = await getConfigEntries(this.hass!);
+    const mqttEntry: ConfigEntry | undefined = entries.find(
+      (entry) => entry.domain === "mqtt"
+    );
+    console.log("mqtt", mqttEntry);
+
+    if (mqttEntry) {
+      subscribeDeviceRegistry(this.hass.connection, (devices) => {
+        const mqttDevices = devices.filter((device) =>
+          device.config_entries.includes(mqttEntry.entry_id)
+        );
+
+        if (this.mqttDevices) {
+          const newDevice = mqttDevices.filter((mqttDevice) => {
+            return this.mqttDevices
+              .map((item) => item.id)
+              .includes(mqttDevice.id);
+          });
+          if (newDevice.length) {
+            console.log("new mqttdevice:", newDevice);
+          }
+        }
+
+        this.mqttDevices = mqttDevices;
+        console.log("mqttDevices", mqttDevices);
+      });
+    }
+  }
+
+  private submitCode() {
+    const token = this.shadowRoot!.getElementById("token").value; // tslint:disable-line
+    if (!token) return;
+    this.hass
+      .callApi("POST", "activation/", {
+        code: token,
+      })
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
   }
 
   private _narrowChanged(ev: PolymerChangedEvent<boolean>) {

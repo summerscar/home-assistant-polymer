@@ -35,7 +35,7 @@ export class HomeAssistantAppEl extends HassElement {
             ></home-assistant-main>
           `
         : html`
-            <ha-init-page .error=${this._error}></ha-init-page>
+            <ha-init-page .error=${true}></ha-init-page>
           `}
     `;
   }

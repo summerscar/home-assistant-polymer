@@ -70,6 +70,7 @@
     "@thomasloven/round-slider": "^0.2.2",
     "@vaadin/vaadin-combo-box": "^4.2.8",
     "@vaadin/vaadin-date-picker": "^3.3.3",
+    "@vaadin/vaadin-notification": "^1.4.0",
     "@webcomponents/shadycss": "^1.9.0",
     "@webcomponents/webcomponentsjs": "^2.2.7",
     "chart.js": "~2.8.0",
