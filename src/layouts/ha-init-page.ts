@@ -62,6 +62,7 @@ class HaInitPage extends LitElement {
     })
       .then((res) => {
         console.log(res);
+        this._retry();
       })
       .catch((err) => {
         console.error(err);

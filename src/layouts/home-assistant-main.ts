@@ -144,7 +144,14 @@ class HomeAssistantMain extends LitElement {
     window.notification = this.shadowRoot!.getElementById("notification"); // tslint:disable-line
     const regeister = this.shadowRoot!.getElementById("regeister"); // tslint:disable-line
     // need to check if regeisted
-    regeister.open(); // tslint:disable-line
+    this.hass.callApi("GET", "activation").then((res) => {
+      console.log(res);
+      if (!res.body.message) {
+        regeister.open();
+        return;
+      }
+    });
+    // tslint:disable-line
     // window.notification.open(); // tslint:disable-line
 
     this.subscribeMqtt();
@@ -205,7 +212,7 @@ class HomeAssistantMain extends LitElement {
     const token = this.shadowRoot!.getElementById("token").value; // tslint:disable-line
     if (!token) return;
     this.hass
-      .callApi("POST", "activation/", {
+      .callApi("POST", "activation", {
         code: token,
       })
       .then((res) => {
