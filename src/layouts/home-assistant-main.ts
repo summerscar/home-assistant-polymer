@@ -19,6 +19,10 @@ import type { PolymerChangedEvent } from "../polymer-types";
 import type { HomeAssistant, Route } from "../types";
 import "./partial-panel-resolver";
 
+import "@polymer/paper-dialog/paper-dialog";
+import "@material/mwc-button";
+import "@polymer/paper-input/paper-input";
+
 const NON_SWIPABLE_PANELS = ["map"];
 
 declare global {
@@ -81,6 +85,18 @@ class HomeAssistantMain extends LitElement {
           .hass=${hass}
           .route=${this.route}
         ></partial-panel-resolver>
+        <paper-dialog id="regeister">
+          <h2>Key</h2>
+          <paper-input id="token"></paper-input>
+          <div class="buttons">
+            <mwc-button label="Cancel" dialog-dismiss></mwc-button>
+            <mwc-button
+              label="OK"
+              dialog-confirm
+              @click=${this.submitCode}
+            ></mwc-button>
+          </div>
+        </paper-dialog>
       </app-drawer-layout>
     `;
   }
@@ -108,6 +124,17 @@ class HomeAssistantMain extends LitElement {
         narrow: this.narrow!,
       });
     });
+
+    // window.notification = this.shadowRoot!.getElementById("notification"); // tslint:disable-line
+    const regeister = this.shadowRoot!.getElementById("regeister"); // tslint:disable-line
+    // need to check if regeisted
+    this.hass.callApi("GET", "activation").then((res) => {
+      console.log(res);
+      if (!res.body.message) {
+        regeister.open();
+        return;
+      }
+    });
   }
 
   protected updated(changedProps: PropertyValues) {
@@ -129,6 +156,21 @@ class HomeAssistantMain extends LitElement {
     if (oldHass && oldHass.language !== this.hass!.language) {
       this.drawer._resetPosition();
     }
+  }
+
+  private submitCode() {
+    const token = this.shadowRoot!.getElementById("token").value; // tslint:disable-line
+    if (!token) return;
+    this.hass
+      .callApi("POST", "activation", {
+        code: token,
+      })
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
   }
 
   private _narrowChanged(ev: PolymerChangedEvent<boolean>) {
